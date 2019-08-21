@@ -1,0 +1,92 @@
+//Start Style for section-2
+@mixin _section-2 {
+  position: relative;
+  height: 100vh;
+}
+
+.section-2 {
+  @include _section-2();
+}
+
+//End Style for section-2
+
+//Start Style for section-2-bg
+@mixin _section-2-bg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #00a0d2;
+  z-index: -1;
+  background-image: url("http://www.massygroup.com/uploadedImages/Massy/Content/Home/Celebrates%2050%20Years%20in%20Guyana.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-2-bg {
+  @include _section-2-bg();
+}
+
+//End Style for section-2-bg
+
+//Start Style for section-2-bg-color
+@mixin _section-2-bg-color{
+  @extend .section-2-bg;
+  background-image: url("");
+  background-color: $danger;
+  opacity: 0.3;
+}
+
+.section-2-bg-color{
+  @include _section-2-bg-color();
+}
+//End Style for section-2-bg-color
+
+
+
+//Start Style for section-2-row-row
+@mixin _section-2-row-row {
+  @extend .row, .align-items-end, .justify-content-md-center;
+  height: inherit;
+}
+
+.section-2-row-row {
+  @include _section-2-row-row();
+}
+
+//End Style for section-2-row-row
+
+//Start Style for section-2-landing-action-container
+@mixin _section-2-landing-action-container {
+  @extend .landing-page-action-container, .text-center;
+}
+
+.section-2-landing-action-container {
+  @include _section-2-landing-action-container();
+}
+
+//End Style for section-2-landing-action-container
+
+//Start Style for section-2-action
+@mixin _section-2-action {
+  @extend .landing-page-action;
+}
+
+.section-2-action {
+  @include _section-2-action();
+}
+
+//End Style for section-2-action
+
+//Start Style for section-2-row-inner
+@mixin _section-2-row-inner {
+  @extend .col-md-4, .offset-md-8;
+  height: 100vh-11.1vh;
+  //padding-bottom: 11.1vh;
+}
+
+.section-2-row-inner {
+  @include _section-2-row-inner();
+}
+
+//End Style for section-2-row-inner

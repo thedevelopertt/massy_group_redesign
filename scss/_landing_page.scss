@@ -1,0 +1,114 @@
+//Start Style for landing-section
+@mixin _landing-section{
+  //@extend .border, .border-primary;
+  height: 100vh-11.1vh;
+  position: relative;
+}
+
+.landing-section{
+  @include _landing-section();
+}
+//End Style for landing-section
+
+//Start Style for landing-bg
+@mixin _landing-bg{
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  //z-index: -1;
+  background-image: url("http://www.massygroup.com/uploadedImages/Massy/Content/Home/Annual%20Report%20Slider%20cover.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.landing-bg{
+  @include _landing-bg();
+}
+//End Style for landing-bg
+
+//Start Style for landing-bg-color
+@mixin _landing-bg-color{
+  @extend .landing-bg;
+  background-image: url("none.none");
+  background-color: $primary;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.landing-bg-color{
+  @include _landing-bg-color();
+}
+//End Style for landing-bg-color
+
+
+
+//Start Style for landing-page-container
+@mixin _landing-page-container {
+  @extend .container-fluid;
+}
+
+.landing-page-container {
+  @include _landing-page-container();
+}
+
+//End Style for landing-page-container
+
+//Start Style for landing-page-row
+@mixin _landing-page-row {
+  @extend .row;
+}
+
+.landing-page-row {
+  @include _landing-page-row();
+}
+
+//End Style for landing-page-row
+
+//Start Style for landing-page-action-container
+@mixin _landing-page-action-container {
+  @extend .col-md-8, .text-center;
+}
+
+.landing-page-action-container {
+  @include _landing-page-action-container();
+}
+
+//End Style for landing-page-action-container
+
+//Start Style for landing-page-action
+@mixin _landing-page-action {
+  @extend .btn, .btn-danger, .text-primary,.font-weight-bold;
+}
+
+.landing-page-action {
+  @include _landing-page-action();
+}
+
+//End Style for landing-page-action
+
+//Start Style for landing-page-row-inner
+@mixin _landing-page-row-inner {
+  @extend .col-md-4;
+  height: 100vh-11.1vh;
+}
+
+.landing-page-row-inner {
+  @include _landing-page-row-inner();
+}
+
+//End Style for landing-page-row-inner
+
+//Start Style for landing-page-row-row
+@mixin _landing-page-row-row {
+  @extend .row, .align-items-end, .justify-content-md-center;
+  height: inherit;
+  padding-bottom: 11.1vh;
+}
+
+.landing-page-row-row {
+  @include _landing-page-row-row();
+}
+
+//End Style for landing-page-row-row

@@ -1,0 +1,49 @@
+//Start Style for section-3
+@mixin _section-3 {
+  @extend .section-2;
+}
+
+.section-3 {
+  @include _section-3();
+}
+
+//End Style for section-3
+
+//Start Style for section-3-bg
+@mixin _section-3-bg {
+  @extend .section-2-bg;
+  background-image: url("http://www.massygroup.com/uploadedImages/Massy/Content/About_Us/Board_and_Executive_Committee/Board_Members/bermudez.png");
+}
+
+.section-3-bg {
+  @include _section-3-bg();
+}
+
+//End Style for section-3-bg
+
+//Start Style for section-3-bg-color
+@mixin _section-3-bg-color{
+  @extend .section-3-bg;
+  background-image: url("");
+  background-color: $info;
+  opacity: 0.3;
+}
+
+.section-3-bg-color{
+  @include _section-3-bg-color();
+}
+//End Style for section-3-bg-color
+
+
+
+//Start Style for section-3-row-inner
+@mixin _section-3-row-inner {
+  @extend .col-md-6, .offset-md-3;
+  height: 100vh-11.1vh;
+}
+
+.section-3-row-inner {
+  @include _section-3-row-inner();
+}
+
+//End Style for section-3-row-inner

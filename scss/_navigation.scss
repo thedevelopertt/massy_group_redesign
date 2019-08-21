@@ -1,0 +1,33 @@
+//Start Style for navigation
+@mixin _navigation {
+  @extend .navbar, .navbar-light, .bg-white, .border-bottom, .border-success;
+  height: 11.1vh;
+}
+
+.navigation {
+  @include _navigation();
+}
+
+//End Style for navigation
+
+//Start Style for brand-logo
+@mixin _brand-logo {
+  height: 48px;
+}
+
+.brand-logo {
+  @include _brand-logo();
+}
+
+//End Style for brand-logo
+
+//Start Style for brand-logo-container
+@mixin _brand-logo-container {
+  @extend .navbar-brand;
+}
+
+.brand-logo-container {
+  @include _brand-logo-container();
+}
+
+//End Style for brand-logo-container

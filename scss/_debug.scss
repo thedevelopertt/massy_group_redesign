@@ -1,0 +1,10 @@
+//Start Style for debug
+@mixin _debug {
+  @extend .border, .border-secondary;
+}
+
+.debug {
+  @include _debug();
+}
+
+//End Style for debug

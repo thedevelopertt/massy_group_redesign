@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat|Ubuntu:700);
+$font-family-base: Montserrat;
+
+
+$primary : #054C78;
+$danger : #FCD305;
+$info : #F48221;
+$success : #26ABE3;
+
+$btn-padding-x : 1rem;
+$btn-border-radius : 60rem;
+
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "landing_page";
+@import "navigation";
+@import "section_2";
+@import "section_3";
+@import "section_4";
+@import "footer";
+@import "debug";
+
